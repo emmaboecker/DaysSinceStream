@@ -1,0 +1,14 @@
+version: "3.1"
+
+services:
+  bot:
+    container_name: days-since-stream
+    image: docker.pkg.github.com/stckoverflw/days-since-stream/twitter-bot:1.0.0
+    volumes:
+      - "/etc/timezone:/etc/timezone:ro"
+      - "/etc/localtime:/etc/localtime:ro"
+      - ./logs:/user/app/logs
+    env_file:
+      - .env
+    ports:
+      - "0.0.0.0:4134:80"
