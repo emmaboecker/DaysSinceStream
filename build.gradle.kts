@@ -1,8 +1,8 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.5.21"
-    kotlin("plugin.serialization") version "1.5.21"
+    kotlin("jvm") version "1.5.30"
+    kotlin("plugin.serialization") version "1.5.30"
     application
 }
 
@@ -25,6 +25,7 @@ dependencies {
 
     implementation("org.jetbrains.kotlinx", "kotlinx-datetime", "0.1.1")
 
+    implementation("ch.qos.logback", "logback-classic", "1.2.3")
     implementation("org.slf4j", "slf4j-simple", "1.7.30")
 
     implementation("dev.inmo", "krontab", "0.6.1")

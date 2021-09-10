@@ -9,7 +9,7 @@ object Config {
     val TWITTER_ACCESS_SECRET: String by getEnv()
 
     val TWITCH_CLIENT_ID: String by getEnv()
-    val TWITCH_CLIENT_SECRET: String by getEnv()
+    val TWITCH_ACCESS_TOKEN: String by getEnv()
 
     val TWITCH_CHANNEL_ID: String by getEnv()
 }
