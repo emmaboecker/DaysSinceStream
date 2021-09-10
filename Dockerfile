@@ -2,7 +2,7 @@ FROM adoptopenjdk/openjdk15-openj9 as builder
 
 COPY . .
 
-RUN ./gradlew --no-daemon installDist
+RUN chmod +x gradlew && ./gradlew --no-daemon installDist
 
 FROM adoptopenjdk/openjdk15-openj9
 
