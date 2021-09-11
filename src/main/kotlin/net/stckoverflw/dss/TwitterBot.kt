@@ -51,7 +51,7 @@ object TwitterBot {
         println("Initialized HttpClient")
 
         GlobalScope.launch {
-            doWhile("0 0 10 * * *") {
+            doWhile("0 0 20 * * *") {
                 postLastStreamDay(lastStream())
                 true
             }
