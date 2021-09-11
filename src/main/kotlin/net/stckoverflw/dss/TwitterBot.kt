@@ -65,7 +65,7 @@ object TwitterBot {
     private fun postLastStreamDay(lastStreamDay: Int) {
         val currentDay = Calendar.getInstance().time.toDateTime().dayOfYear
         val difference = currentDay - lastStreamDay
-        twitter.postTweet("$difference without a TommyInnit Stream".plus(if (difference > 7) " :(" else if (difference >= 3) " :/" else if (difference == 0) " :)" else ""))
+        twitter.postTweet("$difference days without a TommyInnit Stream".plus(if (difference > 7) " :(" else if (difference >= 3) " :/" else if (difference == 0) " :)" else ""))
     }
 
     private suspend fun lastStream(): Int {
