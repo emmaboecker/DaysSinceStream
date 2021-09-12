@@ -69,7 +69,8 @@ object TwitterBot {
     }
 
     private fun formatMessage(difference: Int): String {
-        val builder = StringBuilder(difference)
+        val builder = StringBuilder()
+        builder.append(difference)
         builder.append(if (difference != 1) " days" else "st day")
         builder.append(" without a TommyInnit Stream ")
         builder.append(
