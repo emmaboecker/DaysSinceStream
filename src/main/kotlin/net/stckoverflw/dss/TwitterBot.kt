@@ -76,7 +76,7 @@ object TwitterBot {
         builder.append(
             if (difference > 7)
                 ":("
-            else if (difference >= 3)
+            else if (difference <= 3)
                 ":/"
             else if (difference == 0)
                 ":)"
